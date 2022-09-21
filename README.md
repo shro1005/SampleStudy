@@ -7,12 +7,17 @@
 servers:
   - description: Sample Blog Search API
   - url: http://localhost:8444
+  
 paths:
   /blog/search:
     get:
+    
       description: search blog for search word
+      
       parameters:
+      
         - in: query
+        
           name: query
           description: search word
           schema:
