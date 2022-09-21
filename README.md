@@ -1,8 +1,12 @@
+
+
 <API명세> 
-
 - url : https://app.swaggerhub.com/apis/SHRO1004/Sample/1.0.0#/default/get_blog_topword
-- url 확인 불가시 아래 
+(server url : http://localhost:8444 로 설정후 테스트 진행필요)
 
+servers:
+  - description: Sample Blog Search API
+  - url: http://localhost:8444
 paths:
   /blog/search:
     get:
