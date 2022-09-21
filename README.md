@@ -4,20 +4,16 @@
 - url : https://app.swaggerhub.com/apis/SHRO1004/Sample/1.0.0#/default/get_blog_topword
 (server url : http://localhost:8444 로 설정후 테스트 진행필요)
 
+```c
 servers:
   - description: Sample Blog Search API
-  - url: http://localhost:8444
-  
+  - url: http://localhost:8444 
 paths:
   /blog/search:
     get:
-    
       description: search blog for search word
-      
-      parameters:
-      
+      parameters:     
         - in: query
-        
           name: query
           description: search word
           schema:
@@ -172,7 +168,7 @@ paths:
                       - {searchWord: 'kakaobank4', searchCnt: 1, rank: 5}
                       - {searchWord: 'kakaobank5', searchCnt: 1, rank: 6}
                       - {searchWord: 'kakaobank6', searchCnt: 1, rank: 7}
-                        
+
         '400':
           description: BadRequestError
           content:
@@ -224,4 +220,4 @@ paths:
                   errorType:
                     type: string
                     example: 'InternalServerError'
-
+```
