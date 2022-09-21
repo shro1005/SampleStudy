@@ -1,0 +1,15 @@
+insert into search_word values ('애플', 20, now(),now());
+insert into search_word values ('바나나', 290, now(),now());
+insert into search_word values ('건강검진', 250, now(),now());
+insert into search_word values ('추석', 205, now(),now());
+insert into search_word values ('난마돌', 21, now(),now());
+insert into search_word values ('태풍', 2020, now(),now());
+insert into search_word values ('내일날씨', 220, now(),now());
+insert into search_word values ('KAFKA', 320, now(),now());
+insert into search_word values ('SPRING', 120, now(),now());
+insert into search_word values ('JAVA', 520, now(),now());
+insert into search_word values ('카카오', 5620, now(),now());
+insert into search_word values ('호박고구마', 1120, now(),now());
+insert into search_word values ('블로그', 820, now(),now());
+insert into search_word values ('은행', 320, now(),now());
+insert into search_word values ('개발자', 1120, now(),now());

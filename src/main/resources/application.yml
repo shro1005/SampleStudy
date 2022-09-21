@@ -1,0 +1,32 @@
+spring:
+  profiles:
+    include: API-KEY
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:mem:test_mem;MODE=PostgreSQL;DB_CLOSE_DELAY=-1
+      username: sa
+      password:
+      driver-class-name: org.h2.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        jdbc.lob.non_contextual_creation: true
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+    generate-ddl: false
+  h2:
+    console:
+      enabled: true
+      path: /test_db
+flyway:
+  enabled: true
+
+#포트 설정
+server:
+  port: 8444
+  tomcat:
+    max-connections: 10000
+    threads:
+      max: 300
